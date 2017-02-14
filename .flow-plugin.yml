@@ -1,0 +1,23 @@
+name: wechat_message
+version: 0.0.1
+language: 
+description: Wechat message sender, should send message to users who bind the wechat user to flow.ci
+tags:
+ - wechat
+ - message
+ - sender
+
+public: true
+
+# clone_in_docker: false
+
+inputs:
+  - name: FLOW_WECHAT_MESSAGE_USER_IDS
+    editable: true
+
+  - name: FLOW_WECHAT_MESSAGE_DESCRIPTION
+    editable: true
+    
+outputs:
+
+script_path: ./run.sh
